@@ -1,12 +1,23 @@
 import './navbar.css';
 import logo  from '../../assets/logo.avif';
 import { usePopupContext } from '../../state/PopupContext';
+import { scroller } from 'react-scroll';
 import { HashLink as Link } from 'react-router-hash-link';
+import { ScrollElement } from 'react-scroll';
 
 const Navbar = () => {
 
     
     const { setPopupOpen } = usePopupContext();
+
+    const scrollToElement = (element) => {
+    
+        scroller.scrollTo(element, {
+        duration: 400, // Duración de la animación en milisegundos
+        smooth: true, // Habilitar animación suave
+        offset: -100, // Ajusta la posición final para dejar espacio para la barra de navegación
+        });
+    };
 
     return (
         <>
@@ -20,16 +31,20 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse buttons__Container" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active nav__Btn" aria-current="page" to="#ClientsReviews" smooth>Testimonials</Link>
+                                <Link className="nav-link active nav__Btn" aria-current="page" to="#ClientsReviews" smooth 
+                                onClick={() => scrollToElement('ClientsReviews')}>Testimonials</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active nav__Btn" aria-current="page" to="#Faq" smooth>Faq</Link>
+                                <Link className="nav-link active nav__Btn" aria-current="page" to="#Faq" smooth
+                                onClick={() => scrollToElement('Faq')}>Faq</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active nav__Btn" aria-current="page" to="#Solutions" smooth>Solutions</Link>
+                                <Link className="nav-link active nav__Btn" aria-current="page" to="#Solutions" smooth
+                                onClick={() => scrollToElement('Solutions')}>Solutions</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active nav__Btn" aria-current="page" to="#About" smooth>About</Link>
+                                <Link className="nav-link active nav__Btn" aria-current="page" to="#About" smooth
+                                onClick={() => scrollToElement('About')}>About</Link>
                             </li>                            
                         </ul>                        
                     </div>
