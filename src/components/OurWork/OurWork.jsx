@@ -5,7 +5,7 @@ import goodcourse from '../../assets/ourWork/goodcourse.avif'
 import scaled from '../../assets/ourWork/scaled.avif';
 import neo from '../../assets/ourWork/neo.avif';
 import harness from '../../assets/ourWork/harness.avif';
-import budsFeed from '../../assets/ourWork/budsFeed.avif';
+import budsFeed from '../../assets/ourWork/budsfeed.avif';
 import intermix from '../../assets/ourWork/intermix.avif';
 import pflegetiger from '../../assets/ourWork/pflegetiger.avif';
 import { usePopupContext } from '../../state/PopupContext';
