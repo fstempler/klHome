@@ -1,0 +1,71 @@
+.approach__Title-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.approach__Title{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;    
+}
+.approachContainer{
+    background-image: url(../../assets/background_approach.webp);
+    height: 100vh;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.rowContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: right;
+}
+.approach__img{
+    max-width: 60%;
+    height: auto;        
+}
+.title{
+    font-family: 'Inter', sans-serif;
+}
+
+.text__Text-Container{
+    margin-top: 50px;
+    padding-right: 50px;    
+}
+.text__Title{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.text{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+@media (max-width: 768px) {
+    .approachContainer{
+        background-color: #ffffff;
+        background-image: none;
+    }
+    .approach__Title{
+        margin-top: 50px;        
+    }    
+    .rowContainer{
+        padding: 0 15px;
+    }
+    .imgContainer{
+        justify-content: center;
+        margin: 20px 0;
+    }
+}

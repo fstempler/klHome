@@ -1,0 +1,22 @@
+.btn__Form-Primary{
+    background-color: #1698B6;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    color: #ffffff;
+    border: #1698B6;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+
+  .btn__Form-Secondary{
+    background-color: #E0944C;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 10px 20px;
+  }

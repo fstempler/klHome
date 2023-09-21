@@ -1,0 +1,86 @@
+/* Title and Subtitle */
+.solutions__Title-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.solutions__Title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+.solutions__Subtitle{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+/* Handle Card */
+.solutions__Card-Container{
+    display: flex;
+    justify-content: center;    
+    margin: 0;
+}
+.solutions__Card-Container1{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.solutions__Card-Container2{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1 0 auto;
+}
+.solutions__Card-Style{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+.solutions__img{
+    width: 50%;    
+}
+
+.solutions__Card-Title{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+.solutions__Card-Text{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+}
+
+.solutions__img-native{
+    width: 30%;
+    height: auto;
+}
+
+/* Card Background Colors */
+
+.solutions__Card-Pink{
+    background-color: #FAF0F1;
+}
+.solutions__Card-Blue{
+    background-color: #E9FAFE;
+}
+.solutions__Card-Orange{
+    background-color: #FFEDDB;
+}
+.solutions__Card-Green{
+    background-color: #F1FCFB;   
+}
+
+@media (max-width: 576px) {
+    .solutions__img-native{
+        width: 25%;
+        height: auto;
+    }
+}

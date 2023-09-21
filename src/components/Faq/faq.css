@@ -1,0 +1,61 @@
+.faq__Container{
+    padding: 0 200px;
+    margin: 50px 30px;
+}
+
+/* Text Container handles */
+.faq__Text-Container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.faq__Text-Title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+.faq__Text-Subtitle{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 30px; 
+}
+.faq__Text-Img{
+    width: 70%;
+    height: auto;
+}
+
+/* Accordion handles */
+
+.accordion{
+    margin: 20px 0;      
+    --bs-accordion-btn-bg: #FFEDDB;
+    --bs-accordion-active-bg: #FFEDDB;
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.faq__Accordion-Item{
+    margin: 40px 0;
+    border-radius: 10px;
+    border-style: none;    
+    color: #000000;       
+}
+
+@media (max-width: 576px) {
+    .faq__Container{
+        padding: 0;
+    }
+    .faq__Text-Container{        
+        justify-content: center;
+        align-items: center;
+    }
+    .faq__Text-Img-Container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .faq__Text-Img{
+        width: 50%;
+        height: auto;        
+    }
+}

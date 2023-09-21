@@ -1,0 +1,144 @@
+/* Handles del popup */
+
+
+.form__Popup-Overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1002;     
+  }
+  
+  /* Estilo para el contenedor del formulario */
+  .form_Popup-Container{
+    background-color: #F0F2FA; /* Color de fondo del formulario */    
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    position: relative;
+    overflow-y: auto;
+    margin: 50px;
+    height: 85%;
+  }
+
+  
+  .close_Btn{
+    color: #fff;    
+    font-size: 1.5rem;
+  }
+  .form__Close-Btn{    
+    position: absolute;
+    top: 40px;
+    left: 260px;
+    cursor: pointer;
+    background: none;    
+    border: none;
+  }
+  
+  /* Handles de las columnas */
+  .form__Main-Container{
+    height: 100%;
+  }
+
+  .form__ColIzq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;        
+  }
+  .form__ColDer{
+    background-color: #fff;
+    padding: 25px;        
+  }
+
+  /* Handles de las Imgs */ 
+  .form__Logo{
+    max-width: 60%;
+    min-width: 40%;
+    height: auto;
+  }
+  .form__Img{
+    max-width: 75%;
+    width: 75%;
+    min-width: 50%;
+    height: auto;
+  }
+
+  /* form text and title style */
+  .form__Title-Container{
+    margin: 20px 0 40px 0;
+  }
+  .form__Title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .form__Form-Text{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+  }
+ 
+
+  /* Submit Btn Style */
+  .form__Form-Btn{
+    background-color: #1698B6;
+    width: 100%;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 10px;
+  }
+  .form__Form-Btn:hover{
+    background-color: #fff;
+    color:#1698B6;
+    border-width: 2px;
+    border-color: #1698B6;
+    font-weight: 500;
+  }
+
+  /* // X-Small devices (portrait phones, less than 576px */
+  @media (max-width: 768px){
+    .form_Popup-Container{
+        margin: 50px;
+        height: 85%;
+    } 
+    /* body{
+        overflow: hidden;
+    } */
+    .form__Close-Btn{    
+        position: absolute;
+        top: 30px;
+        left: 50px;
+    } 
+    .form__ColDer{
+      width: 100%;
+    }  
+  }
+
+  @media (max-width: 992px){
+    .form__Close-Btn{    
+      position: absolute;
+      top: 30px;
+      left: 10px;
+  }   
+  }
+
+  /* X-Large devices (large desktops, 1200px and up */
+@media (max-width: 1400px) {
+  .form__Close-Btn{    
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    cursor: pointer;
+    background: none;    
+    border: none;
+  }
+}

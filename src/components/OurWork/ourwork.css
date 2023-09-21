@@ -1,0 +1,79 @@
+.ourWork__MainContainer{    
+    margin-top: 50px;    
+    background-image: url(../../assets/ourWork/background_ourWork.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourWork__Text-Container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.ourWork__Title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+.ourWork__Subtitle{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+.ourWork__Card-Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.card{
+    background-color: #FCFAF7;
+    padding: 0;
+    margin: 10px;    
+}
+.card__Img{
+    width: 100%;
+    object-fit: cover;
+}
+.button__Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pcIcon{
+    color: rgb(163, 164, 165);
+    font-size: 2rem;    
+}
+.card-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+}
+.ourWork__ProjectsBtn-Container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.ourWork__ProjectsBtn{
+    background-color: #E0944C;
+    font-family: 'Inter', sans-serif;
+    padding: 10px 50px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+@media (max-width: 576px) {
+    .ourWork__MainContainer{
+        margin-top: 150px;
+    }
+}

@@ -1,0 +1,118 @@
+.footer__Container{
+    background-color: #171717;        
+    padding: 50px 0;
+}
+.footer__Text-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer__Title-Container{
+    margin: 20px 0;
+    padding: 15px;
+    text-align: center;
+}
+.footer__Title{
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+.footer__Subtitle-Container{
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer__Subtitle{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.footer__Input-Container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    flex-direction: row;
+    max-width: 600px; /* Ajusta este valor según tus necesidades */
+    margin: 50px auto; /* Centrar horizontalmente el contenedor completo */
+}
+.footer__Subscribe-Form{
+    display: flex;
+}
+
+.footer_Input {
+    margin: 0 10px;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px 40px;   
+    width: 180px;     
+}
+
+.footer__Btn {
+    margin: 0 10px; 
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px 40px;    
+    color: #ffffff;    
+    background-color: #51A2F0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+.footer__Info-Container{
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    border-bottom: solid 1px #ffffff; 
+    margin: 0 300px;     
+    padding: 20px 0;     
+}
+.footer__Address-Container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__Address{
+    color: #ffffff;
+}
+.footer__Rrss-Container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.footer__Rrss{
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+a{
+    text-decoration:none !important ;
+}
+.icon{
+    margin: 0 10px;
+    color: #ffffff;
+}
+.footer__Address-Container{
+    margin-top: 50px;
+    text-align: center;
+}
+.footer__Copyright{
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .footer__Info-Container{
+        margin: 0;
+        
+    }
+    .footer__Copyright-Container{
+        justify-content: center;
+    }
+    .footer__Rrss-Container{
+        justify-content: center;
+    }
+}

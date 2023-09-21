@@ -1,0 +1,72 @@
+.howWe__Info-Container{
+    background-image: url(../../assets/howWe/howWe-background.webp);
+    height: 75vh;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;         
+}
+
+.howWe__Title-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    margin: 50px 0;
+}
+.howWe__Title{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+.howWe__Subtitle{
+   font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 30px; 
+}
+.howWe__rowContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.howWe__imgContainer{
+    display: flex;
+    justify-content: right;        
+}
+.howWe__img{
+    width: 50%;
+    height: auto;        
+}
+.howWe__Text-Container{
+    padding-right: 100px;
+}
+.howWe__Text-Title{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.howWe__Text{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+@media (max-width: 768px) {
+    .howWe__Info-Container{
+        padding: 0 20px;
+        background-color: #ffffff;
+        background-image: none;
+    }
+    .howWe__imgContainer{
+        display: flex;
+        justify-content: center;        
+    }
+    .howWe__img{
+        width: 75%;
+        height: auto;        
+    }
+    .howWe__Text-Container{
+        padding: 0 10px;    
+    }    
+}
+
