@@ -145,7 +145,7 @@ const Form = () => {
                                 <option value="$7K - $10K">$7K - $10K</option>
                                 <option value="$10K - $15K">$10K - $15K</option>
                                 <option value="$15K - $20K">$15K - $20K</option>
-                                <option value="> $20K">> $20K</option>
+                                <option value="> $20K">&gt; $20K</option>
                             </select>
                         </div>
                         <div className='mb-3'>
