@@ -31,19 +31,19 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse buttons__Container" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active nav__Btn" aria-current="page" to="#ClientsReviews" smooth 
+                                <Link className="nav-link active nav__Btn" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" aria-current="page" to="#ClientsReviews" smooth 
                                 onClick={() => scrollToElement('ClientsReviews')}>Testimonials</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active nav__Btn" aria-current="page" to="#Faq" smooth
+                                <Link className="nav-link active nav__Btn" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" aria-current="page" to="#Faq" smooth
                                 onClick={() => scrollToElement('Faq')}>Faq</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active nav__Btn" aria-current="page" to="#Solutions" smooth
+                                <Link className="nav-link active nav__Btn" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" aria-current="page" to="#Solutions" smooth
                                 onClick={() => scrollToElement('Solutions')}>Solutions</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active nav__Btn" aria-current="page" to="#About" smooth
+                                <Link className="nav-link active nav__Btn" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" aria-current="page" to="#About" smooth
                                 onClick={() => scrollToElement('About')}>About</Link>
                             </li>                            
                         </ul>                        

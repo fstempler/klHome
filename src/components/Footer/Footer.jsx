@@ -94,28 +94,28 @@ const Footer = () => {
                 <div className='col-12 col-sm-6 footer__Address-Container'>
                     <p className='footer__Address'> 
                        Tel: +1 (917) 695-4990
-                    
+                        <br/>
                         Address: 
-                    
+                        <br/>
                         1178 Broadway
-                    
+                        <br/>
                         New York, NY 10001
-                    
+                        <br/>
                         United States
                     </p>
                 </div>               
                 <div className='col-12 col-sm-6 footer__Rrss-Container'>
                     <div className='footer__Rrss'>
-                        <i className="bi bi-facebook icon"></i>
+                        {/* <i className="bi bi-facebook icon"></i> */}
                         <a target='blanc' href='https://ar.linkedin.com/company/krausslivic-venture-capital?trk=public_profile_topcard-current-company'>
                             <i className="bi bi-linkedin icon"></i>
                         </a>
-                        <i className="bi bi-instagram icon"></i>
-                        <i className="bi bi-twitter-x icon"></i>
+                        {/* <i className="bi bi-instagram icon"></i> */}
+                        {/* <i className="bi bi-twitter-x icon"></i> */}
                     </div>
                 </div>                           
             </div>
-            <div className='row footer__Address-Container'>
+            <div className='row footer__Copyright-Container'>
                 <p className='footer__Copyright'>
                     © 2010 Krauss & Livic - All rights reserved
                 </p>

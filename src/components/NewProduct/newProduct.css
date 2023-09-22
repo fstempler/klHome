@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     padding: 0 30px;
+    height: 100vh;
 }
 .newProduct__Title-Container{
     margin: 50px 0;

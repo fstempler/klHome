@@ -1,3 +1,6 @@
+.solutions__MainContainer{
+    height: 100%;
+}
 /* Title and Subtitle */
 .solutions__Title-Container{
     display: flex;
@@ -84,3 +87,9 @@
         height: auto;
     }
 }
+
+/* @media (max-width: 1200px){
+    .solutions__MainContainer{
+        height: 100%;
+    }
+} */

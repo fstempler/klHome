@@ -28,9 +28,8 @@ const OurWork = () => {
                     </p>
                 </div>
             </div>
-
-            <div className='ourWork__Card-Container row container'>
-                <div className="card border-0" style={{width: '25rem', maxWidth: '25rem'}}>
+            <div className='ourWork__Card-Container row row-cols-1 row-cols-md-2 row-cols-lg-1'>
+            <div className="card border-0" style={{width: '20rem', minWidth:'10rem',  maxWidth: '25rem'}}>
                     <img src={metla} className="card-img-top card__Img" alt="Metla" />
                     <div className="card-body">
                         <h5 className="card-title">Metla</h5>
@@ -42,7 +41,7 @@ const OurWork = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card border-0" style={{width: '25rem', maxWidth: '25rem'}}>
+                <div className="card border-0" style={{width: '20rem',  minWidth:'10rem', maxWidth: '25rem'}}>
                     <img src={thirdself} className="card-img-top card__Img" alt="Third Self" />
                     <div className="card-body">
                         <h5 className="card-title">ThirdSelf</h5>
@@ -54,7 +53,7 @@ const OurWork = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card border-0" style={{width: '25rem', maxWidth: '25rem'}}>
+                <div className="card border-0" style={{width: '20rem', minWidth:'10rem',  maxWidth: '25rem',}}>
                     <img src={goodcourse} className="card-img-top card__Img" alt="GoodCourse" />
                     <div className="card-body">
                         <h5 className="card-title">GoodCourse</h5>
@@ -65,7 +64,10 @@ const OurWork = () => {
                         </div>                        
                     </div>
                 </div>
-                <div className="card border-0" style={{width: '25rem', maxWidth: '25rem'}}>
+            </div>
+
+            <div className='ourWork__Card-Container row row-cols-1 row-cols-md-2 row-cols-lg-1'>
+            <div className="card border-0" style={{width: '20rem',  minWidth:'10rem', maxWidth: '25rem'}}>
                     <img src={scaled} className="card-img-top card__Img" alt="Scaled" />
                     <div className="card-body">
                         <h5 className="card-title">Scaled</h5>
@@ -77,7 +79,7 @@ const OurWork = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card border-0" style={{width: '25rem', maxWidth: '25rem'}}>
+                <div className="card border-0" style={{width: '20rem',  minWidth:'10rem', maxWidth: '25rem'}}>
                     <img src={neo} className="card-img-top card__Img" alt="Neo" />
                     <div className="card-body">
                         <h5 className="card-title">ThirdSelf</h5>
@@ -89,7 +91,7 @@ const OurWork = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card border-0" style={{width: '25rem', maxWidth: '25rem'}}>
+                <div className="card border-0" style={{width: '20rem',  minWidth:'10rem', maxWidth: '25rem'}}>
                     <img src={harness} className="card-img-top card__Img" alt="harness" />
                     <div className="card-body">
                         <h5 className="card-title">Harness</h5>
@@ -100,7 +102,12 @@ const OurWork = () => {
                         </div>                        
                     </div>
                 </div>
-                <div className="card border-0" style={{width: '25rem', maxWidth: '25rem' }}>
+            </div>
+
+            <div className='ourWork__Card-Container row row-cols-1 row-cowls-md-2 row-cols-lg-1'>
+                
+                
+                <div className="card border-0" style={{width: '20rem',  minWidth:'10rem', maxWidth: '25rem'}}>
                     <img src={budsFeed} className="card-img-top card__Img" alt="BudsFeed" />
                     <div className="card-body">
                         <h5 className="card-title">BudsFeed</h5>
@@ -112,7 +119,7 @@ const OurWork = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card border-0" style={{width: '25rem', maxWidth: '25rem' }}>
+                <div className="card border-0" style={{width: '20rem',  minWidth:'10rem', maxWidth: '25rem'}}>
                     <img src={intermix} className="card-img-top card__Img" alt="Intermix" />
                     <div className="card-body">
                         <h5 className="card-title">Intermix</h5>
@@ -124,7 +131,7 @@ const OurWork = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card border-0" style={{width: '25rem', maxWidth: '25rem'}}>
+                <div className="card border-0" style={{width: '20rem', minWidth:'10rem', maxWidth: '25rem'}}>
                     <img src={pflegetiger} className="card-img-top card__Img" alt="Pflegetiger" />
                     <div className="card-body">
                         <h5 className="card-title">Pflegetiger</h5>

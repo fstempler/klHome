@@ -1,6 +1,7 @@
 .howWe__Info-Container{
     background-image: url(../../assets/howWe/howWe-background.webp);
-    height: 75vh;
+    background-position: center;
+    height: 60vh;
     margin-top: 60px;
     display: flex;
     justify-content: center;         
@@ -38,7 +39,7 @@
     height: auto;        
 }
 .howWe__Text-Container{
-    padding-right: 100px;
+    padding-right: 140px;
 }
 .howWe__Text-Title{
     font-family: 'Inter', sans-serif;
@@ -49,6 +50,16 @@
     font-family: 'Inter', sans-serif;
     font-size: 1.2rem;
     line-height: 30px;
+}
+
+@media (max-width: 1500px) {
+    .howWe__Info-Container{
+        background-position: right;
+    }
+    .howWe__Text-Container{
+        padding-right: 160px;
+    }
+    
 }
 
 @media (max-width: 768px) {

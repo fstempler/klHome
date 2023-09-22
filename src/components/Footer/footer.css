@@ -70,15 +70,17 @@
     margin: 0 300px;     
     padding: 20px 0;     
 }
-.footer__Address-Container{
+.footer__Copyright-Container{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 .footer__Address{
     color: #ffffff;
+    text-align: left;
 }
 .footer__Rrss-Container{
     display: flex;
@@ -102,6 +104,7 @@ a{
 }
 .footer__Copyright{
     color: #ffffff;
+    text-align: center;
 }
 
 @media (max-width: 768px) {

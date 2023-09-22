@@ -31,7 +31,7 @@ const Faq = () => {
                                     What is No-code?
                                 </button>
                             </h2>
-                            <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div className="accordion-body">
                                     No-code is a software development approach that requires few, if any, programming skills to build an application.
                                     This allows anyone who has the necessary institutional knowledge and understands the business requirements for an app but lacks knowledge of programming languages to create software applications such as a form, a website, or something more complex as a marketplace or a CRM.

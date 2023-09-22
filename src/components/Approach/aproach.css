@@ -1,8 +1,9 @@
 .approach__Title-Container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 30px 0;
+    align-items: center;    
+    margin-bottom: 50px;
+    margin-top: 100px;
 }
 .approach__Title{
     text-align: center;
@@ -10,37 +11,50 @@
     font-weight: 800;
     font-size: 3rem;    
 }
-.approachContainer{
-    background-image: url(../../assets/background_approach.webp);
-    height: 100vh;
+.approachContainer{ 
     margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
+    display: flex;    
+    flex-direction: column; 
+    margin-bottom: 100px;   
 }
 
-.rowContainer{
+.rowContainer{    
+    background-image: url(../../assets/background_approach.webp);
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
-    align-items: center;      
+    align-items: center;  
+    height: 40vh;
+    padding-left: 150px;   
+    padding-right: 150px;
+    background-position: center;
 }
 
 .imgContainer{
+    /* background-image: url(../../assets/background_approach.webp); */
+    
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: right;
+    justify-content: right;    
+
 }
 .approach__img{
-    max-width: 60%;
-    height: auto;        
+    max-width: 80%;
+    width: 60%;
+    height: auto;            
 }
 .title{
     font-family: 'Inter', sans-serif;
 }
 
+.text__Container{
+padding-right: 60px;
+padding-left: 16px;
+}
+
 .text__Text-Container{
     margin-top: 50px;
-    padding-right: 50px;    
+    padding-right: 80px;    
 }
 .text__Title{
     font-family: 'Inter', sans-serif;
@@ -49,23 +63,45 @@
 }
 .text{
     font-family: 'Inter', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 30px;
 }
 
-@media (max-width: 768px) {
-    .approachContainer{
+@media (max-width: 1300px) {
+    .rowContainer{
+        padding-left: 20px;
+        padding-right: 20px;
+        background-position: center;
+        width: 100%;
+    }
+    .approach__img{
+        width: 80%;
+    }
+    .text__Container{
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 770px) {
+    .rowContainer{
         background-color: #ffffff;
         background-image: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 70vh;
     }
     .approach__Title{
         margin-top: 50px;        
-    }    
+    }        
     .rowContainer{
-        padding: 0 15px;
+        padding: 0 10px;
     }
     .imgContainer{
         justify-content: center;
         margin: 20px 0;
     }
+    .text__Container{
+        padding-right: 0;
+    }
 }
+

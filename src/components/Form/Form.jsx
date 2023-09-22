@@ -94,7 +94,7 @@ const Form = () => {
                     </h1>
                 </div>
                 <div className='form__Form-Container'>
-                    <form onSubmit={handleSubmit} >
+                    <form onSubmit={handleSubmit}>
                         <div className="mb-3">                            
                             <input type="text"  className={`form-control ${formData.firstName === '' ? 'is-invalid' : ''}`} 
                             placeholder='First Name' id="exampleInputEmail1" aria-describedby="firstName" 
