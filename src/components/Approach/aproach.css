@@ -1,7 +1,6 @@
 .approachContainer{     
     display: flex;    
-    flex-direction: column;       
-    height: 100vh;
+    flex-direction: column;           
     align-items: center;
     justify-content: center;
 }
@@ -80,9 +79,6 @@ padding-left: 16px;
     .text__Container{
         padding-right: 0px;
     }
-    /* .approachContainer{
-        margin-top: 60px;
-    } */
 }
 
 @media (max-width: 768px) {
@@ -105,6 +101,12 @@ padding-left: 16px;
     }
     .text__Container{
         padding-right: 0;
+    }
+    .text__Title{     
+        font-size: 1.1rem;        
+    }
+    .text{        
+        font-size: 0.8rem;        
     }
 }
 

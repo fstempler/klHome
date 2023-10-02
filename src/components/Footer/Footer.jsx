@@ -78,16 +78,22 @@ const Footer = () => {
                 </div>
             </div>
             
-            <div className='row footer__Input-Container container'>
+            <div className='row flex-md-row flex-md-column footer__Input-Container container'>
                 <form onSubmit={subscribe} className='footer__Subscribe-Form'>
-                <input
-                    className='col footer_Input'
-                    placeholder="What's is your email?"
-                    name='email'
-                    value={emailValue} 
-                    onChange={(e) => setEmailValue(e.target.value)} 
-                />
-                <button type='submit' className=' col footer__Btn'>Subscribe</button>
+                    
+                      <input
+                        className='footer_Input'
+                        placeholder="What's is your email?"
+                        name='email'
+                        value={emailValue} 
+                        onChange={(e) => setEmailValue(e.target.value)} 
+                        />
+                    
+                
+                
+                        <button type='submit' className='footer__Btn'>Subscribe</button>
+                
+                
                 </form>
             </div>
             <div className='row footer__Info-Container'>
