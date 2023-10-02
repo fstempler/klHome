@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;    
+    width: 100%;        
 }
 
 .ourWork__Text-Container{
@@ -81,6 +81,6 @@
 }
 @media (max-width: 576px) {
     .ourWork__MainContainer{
-        margin-top: 150px;
+        margin-top: 200px;
     }
 }
