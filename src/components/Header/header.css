@@ -5,10 +5,7 @@
     flex-direction: column; /* Alinear el contenido en columna */
     justify-content: center; /* Centrar verticalmente el contenido */
     align-items: center; /* Centrar horizontalmente el contenido */
-    padding: 0 30px;
-    position: relative;
-    top: 100px;
-    
+    padding: 0 30px;   
 }
 .img__Container{
     display: flex;
@@ -71,17 +68,17 @@
     color: green;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .header__Container{
         position: relative;
         top: 150px
     }
-}
+} */
 
 
 @media (max-width: 576px) {
  .header__Container{    
-    margin-top: 50px;
+    margin-top: 150px;
  }   
 }
  
