@@ -63,11 +63,12 @@
 }
 .footer__Info-Container{
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center;
+    justify-content: center; 
+    align-items: flex-start;
     border-bottom: solid 1px #ffffff;        
     padding: 20px 0;     
     width: 75%;
+    margin-top: 50px;
 }
 .footer__Copyright-Container{
     display: flex;
@@ -80,6 +81,7 @@
 .footer__Address{
     color: #ffffff;
     text-align: left;
+    font-size: 1rem;
 }
 .footer__Rrss-Container{
     display: flex;
@@ -97,19 +99,40 @@ a{
     margin: 0 10px;
     color: #ffffff;
 }
-.footer__Address-Container{
-    margin-top: 50px;
+.footer__Address-Container{    
     text-align: center;
 }
 .footer__Copyright{
     color: #ffffff;
     text-align: center;
 }
+.footer__Item{
+    font-size: 0.8rem;
+}
+.footer__Sitemap-Container{
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;    
+    /* margin-left: auto;
+    margin-right: auto; */
+    flex-wrap: wrap;
+}
+.footer__List{
+    list-style: none;
+}
+
+/* Data protectio */
+/* +1 (917) 695-4990 */
+span.rev { unicode-bidi:bidi-override; direction:rtl }
+span.rev.email:before { content:"moc.civil" }
+span.rev.email:after { content:"@ofni" }
+span.rev.phone:before { content:"0994 - " }
+span.rev.phone:after { content:" (719) 1+" }
 
 @media (max-width: 768px) {
     .footer__Info-Container{
-        margin: 0;
-        
+        margin: 0;        
     }
     .footer__Copyright-Container{
         justify-content: center;
@@ -117,4 +140,16 @@ a{
     .footer__Rrss-Container{
         justify-content: center;
     }    
+}
+@media (max-width: 576px) {    
+    
+    .footer__Rrss-Container{
+        justify-content: flex-start;
+    }
+    .footer__Sitemap-Container{
+        justify-content: flex-start;        
+    }    
+    .footer__Sitemap-List{
+        padding: 0;
+    }
 }

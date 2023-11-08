@@ -1,6 +1,10 @@
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import { useState } from 'react'; 
+import { scroller } from 'react-scroll';
+import { HashLink as Link } from 'react-router-hash-link';
+import { ScrollElement } from 'react-scroll';
+
 import 'react-toastify/dist/ReactToastify.css';
 import './footer.css'
 
@@ -97,21 +101,48 @@ const Footer = () => {
                 </form>
             </div>
             <div className='row footer__Info-Container'>
-                <div className='col-12 col-sm-6 footer__Address-Container'>
+                <div className='col-12 col-sm-4 footer__Address-Container'>
                     <p className='footer__Address'> 
-                       Tel: +1 (917) 695-4990
+                        <strong>Contact</strong>
+                        {/* +1 (917) 695-4990 */}
                         <br/>
-                        Address: 
+                        <span className='footer__Item rev phone'>596</span>
                         <br/>
-                        1178 Broadway
+                        <a href='mailto:info@krausslivic.com'><span className='footer__Item rev email'>ssuark</span></a>
                         <br/>
-                        New York, NY 10001
                         <br/>
-                        United States
+                        <strong>Address</strong> 
+                        <br/>
+                        <span className='footer__Item'>1178 Broadway</span>
+                        <br/>
+                        <span className='footer__Item'>New York, NY 10001</span>
+                        <br/>
+                        <span className='footer__Item'>United States</span>
                     </p>
                 </div>               
-                <div className='col-12 col-sm-6 footer__Rrss-Container'>
+                <div className='col-12 col-sm-4 footer__Sitemap-Container'>
+                    <ul className='footer__Sitemap-List'>
+                        <li className="footer__List">
+                            <Link className=""  to="#ClientsReviews" smooth 
+                                onClick={() => scrollToElement('ClientsReviews')}>Testimonials</Link>
+                        </li>
+                        <li className="footer__List">
+                            <Link className=""  to="#Faq" smooth
+                                onClick={() => scrollToElement('Faq')}>Faq</Link>
+                        </li>
+                        <li className="footer__List">
+                            <Link className=""  to="#Solutions" smooth
+                            onClick={() => scrollToElement('Solutions')}>Solutions</Link>
+                        </li>
+                        <li className="footer__List">
+                            <Link className=""  to="#About" smooth
+                            onClick={() => scrollToElement('About')}>About</Link>
+                        </li>                            
+                    </ul>
+                </div>               
+                <div className='col-12 col-sm-4 footer__Rrss-Container'>
                     <div className='footer__Rrss'>
+                        <p className='footer__Address'><strong>Follow Us</strong></p>
                         {/* <i className="bi bi-facebook icon"></i> */}
                         <a target='blanc' href='https://ar.linkedin.com/company/krausslivic-venture-capital?trk=public_profile_topcard-current-company'>
                             <i className="bi bi-linkedin icon"></i>
