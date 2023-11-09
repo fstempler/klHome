@@ -10,24 +10,16 @@ import './footer.css'
 
 const Footer = () => {
 
-    // const suscribe = (e) => {
-    //     e.preventDefault();
-    //     emailjs.sendForm('service_ql13lh4', 'template_ucdfrxq', e.target, '-_1P_YxIBq8aEtmYt')
-
-    //     toast.success('Thank you for subscribing', {
-    //         position: "top-center",
-    //         autoClose: 3000,
-    //         hideProgressBar: false,
-    //         closeOnClick: true,
-    //         pauseOnHover: true,
-    //         draggable: true,
-    //         progress: undefined,
-    //         theme: "light",
-    //         });
-        
-            
-        
-    // };
+    const EmailLink = () => {
+        const user = 'info';
+        const site = 'krausslivic.com';
+      
+        return (
+          <a className='footer__Item' href={`mailto:${user}@${site}`}>
+            {user}@{site}
+          </a>
+        );
+      };
 
     const [emailValue, setEmailValue] = useState(''); // Estado para el valor del input
   const [formSubmitted, setFormSubmitted] = useState(false); // Estado para controlar el envío del formulario
@@ -103,12 +95,12 @@ const Footer = () => {
             <div className='row footer__Info-Container'>
                 <div className='col-12 col-sm-4 footer__Address-Container'>
                     <p className='footer__Address'> 
-                        <strong>Contact</strong>
-                        {/* +1 (917) 695-4990 */}
+                        <strong>Contact</strong>                        
                         <br/>
                         <span className='footer__Item rev phone'>596</span>
                         <br/>
-                        <a href='mailto:info@krausslivic.com'><span className='footer__Item rev email'>ssuark</span></a>
+                        {/* <a href='mailto:info@krausslivic.com'><span className='footer__Item rev email'>ssuark</span></a> */}
+                        <EmailLink />
                         <br/>
                         <br/>
                         <strong>Address</strong> 
