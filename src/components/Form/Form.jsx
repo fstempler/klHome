@@ -4,7 +4,7 @@ import img_form from '../../assets/form/img_form.avif';
 import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import emailjs from '@emailjs/browser';
+//import emailjs from '@emailjs/browser'; Activate to allow form send data to email
 import './form.css'; 
 
 const Form = () => {
@@ -34,23 +34,48 @@ const Form = () => {
             email: '',
             projectDetails: '',
             budget:'', 
-        });
+        });        
 
-        emailjs.sendForm('service_pwkpnpn', 'template_v09rocg', e.target, 'kawIe2FBZ20LSsXyk')
-
-        toast.success('Thank You! We will get in contact soon', {
-            position: "top-center",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            });
+        fetch('https://script.google.com/macros/s/AKfycby5XgIIw7a5nPlf7jn1OhD3I-v1_4P35HXdyYU883pmjJS-kor_vhJZLOLt8gRnLwgelQ/exec', {
+            method: 'POST',
+            body: new FormData(e.target),
+        })
+        .then ((response) => response.json())
+        .then((data) => {
+            console.log(data)
+            toast.success('Thank You! We will get in contact soon', {
+                position: 'top-center',
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: 'light',
+              });
+              handleClose();
         
-        handleClose();
-    }
+        })
+        .catch((error) => {
+            console.error('Error sending data: ' + error);
+            toast.error('Something went wrong, please try again later.', {
+              position: 'top-center',
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: 'dark',
+            });
+          });
+
+        
+
+        // Delivering Form Data to Email
+        // emailjs.sendForm('service_pwkpnpn', 'template_v09rocg', e.target, 'kawIe2FBZ20LSsXyk')
+
+    };
 
     const [formValid, setFormValid] = useState(false);
     useEffect(() => {
@@ -94,7 +119,7 @@ const Form = () => {
                     </h1>
                 </div>
                 <div className='form__Form-Container'>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} method='post' name='contact-form'>
                         <div className="mb-3">                            
                             <input type="text"  className={`form-control ${formData.firstName === '' ? 'is-invalid' : ''}`} 
                             placeholder='First Name' id="exampleInputEmail1" aria-describedby="firstName" 
